@@ -98,7 +98,8 @@ services:
       - SOC_NET
 
   opencti:
-    image: opencybersecurity/opencti:6.0.0
+    image: opencti/platform:4.1.2
+  
     restart: unless-stopped
     environment:
       - DATABASE_HOST=opencti_db
